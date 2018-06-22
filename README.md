@@ -3,6 +3,7 @@
 ## with Original TFT display
 ### Based on work form Murdock (lesimprimantes3d.fr)
 ### Based on work from derhopp (https://github.com/derhopp) and Bartolomeus (Thingiverse)
+#### Based on work from Systemik and Robert Phan
 
 MARLIN 1.1.8 Anycubic I3 Mega V2 with original screen.
 
