@@ -6,12 +6,12 @@
 #define BOARD_NAME         "TRIGORILLA"
 #define LARGE_FLASH        true
 
-// Divers
+// Misc PINs
 #define BUZZER 			   31
 #define SDPOWER            -1
 #define SDSS               53
 #define LED_PIN            13
-#define Z_MIN_PROBE_PIN     11
+#define Z_MIN_PROBE_PIN     2
 #define FIL_RUNOUT_PIN	   19
 
 #ifdef OutageTest
@@ -19,7 +19,7 @@
 	#define OUTAGECON_PIN   58
 #endif
 
-// Moteurs
+// Steppers
 #define X_STEP_PIN         54
 #define X_DIR_PIN          55
 #define X_ENABLE_PIN       38
@@ -46,12 +46,12 @@
 
 // EndStops
 #define X_MIN_PIN           3
-#define Y_MIN_PIN          42 // Origine 42.
+#define Y_MIN_PIN          42
 #define Z_MIN_PIN          18
 
 #define X_MAX_PIN          43
 #define Y_MAX_PIN          -1 
-#define Z_MAX_PIN          11 // Set to 11 to use ABL Sensor
+#define Z_MAX_PIN          -1
 
 // Fans
 #define FAN_PIN             9
@@ -59,19 +59,19 @@
 #define CONTROLLER_FAN_PIN  7
 
 // Heaters
-#define HEATER_0_PIN       10 // Extrudeur 1.
-#define HEATER_1_PIN       45 // Extrudeur 2.
+#define HEATER_0_PIN       10
+#define HEATER_1_PIN       45
 #define HEATER_BED_PIN      8
 
-// Sondes température
-#define TEMP_0_PIN         13   // Température Ext1.
-#define TEMP_1_PIN         15   // Température Ext2.
-#define TEMP_2_PIN         12   // Température Ext3.
-#define TEMP_BED_PIN       14   // Température Bed. 
+// Temperatursensoren
+#define TEMP_0_PIN         13
+#define TEMP_1_PIN         15
+#define TEMP_2_PIN         12
+#define TEMP_BED_PIN       14
 
 // Servos
 #ifdef NUM_SERVOS
-	//#define SERVO0_PIN      11 // Removed to use pin 11 as probe sensor for ABL
+	#define SERVO0_PIN      11
 	
 	#if NUM_SERVOS > 1
 		#define SERVO1_PIN    6
